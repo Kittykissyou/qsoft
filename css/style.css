@@ -126,7 +126,7 @@ p {
           box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
 }
 .header .header-container {
-  min-height: 80px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,8 +138,8 @@ p {
           align-items: center;
 }
 .header .header-container .header-container__logo {
-  width: 135.04px;
-  height: 30.32px;
+  width: 135px;
+  height: 30px;
 }
 .header .header-container .header-container__search-bar {
   height: 40px;
@@ -171,6 +171,9 @@ p {
   border: solid #ebebf1;
   border-width: 0 0 0 1px;
 }
+.header .header-container .header-container__profile .header-container__profile-vector {
+  display: none;
+}
 .header .header-container .header-container__profile .header-container__profile-name {
   font-weight: 400;
   font-size: 14px;
@@ -181,6 +184,9 @@ p {
 .header .header-container .header-container__profile .header-container__profile-photo {
   height: 40px;
   width: 40px;
+}
+.header .header-container__search-bar375 {
+  display: none;
 }
 
 .main {
@@ -266,11 +272,154 @@ p {
   .header-container__search-bar {
     max-width: 344px;
   }
+  .main .main-container .main-container__brands-container {
+    height: 475px;
+  }
   .brand {
     width: 229px;
   }
   .brand .brand__john-deere {
     height: 34px;
     width: 183px;
+  }
+  .brand .brand__mcdonalds {
+    width: 99px;
+    height: 74px;
+  }
+  .brand .brand__ikea {
+    width: 175px;
+    height: 70px;
+  }
+  .brand .brand__reebook {
+    width: 187px;
+    height: 38px;
+  }
+  .brand .brand__nike {
+    width: 143px;
+    height: 74px;
+  }
+  .brand .brand__caterpillar {
+    width: 196px;
+    height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  ._container {
+    max-width: 335px;
+  }
+  .header .header-container {
+    height: 62px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header-container .header-container__search-bar {
+    display: none;
+  }
+  .header .header-container .header-container__profile {
+    width: 24px;
+    height: 24px;
+    padding: 0 0 0 0px;
+    border: none;
+  }
+  .header .header-container .header-container__profile .header-container__profile-vector {
+    height: 24px;
+    width: 24px;
+    display: block;
+  }
+  .header .header-container .header-container__profile .header-container__profile-name {
+    display: none;
+  }
+  .header .header-container .header-container__profile .header-container__profile-photo {
+    display: none;
+  }
+  .header .header-container__search-bar375 {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 375px;
+    padding: 12px 49px;
+    border: 1px solid #ebebf1;
+    border-radius: 5px;
+    background: url(../img/header/search.png) no-repeat 14px 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+  .main {
+    margin-top: 70px;
+  }
+  .main .main-container .main-container__header {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 160%;
+    text-transform: uppercase;
+  }
+  .main .main-container .main-container__brands-container {
+    height: 270px;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .brand {
+    height: 120px;
+    width: 287.5px;
+    border: 1px solid #ebebf1;
+    border-radius: 5px;
+    -webkit-box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+            box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .brand .brand__henkel {
+    height: 64px;
+    width: 116px;
+  }
+  .brand .brand__john-deere {
+    height: 44px;
+    width: 234px;
+  }
+  .brand .brand__mcdonalds {
+    width: 85px;
+    height: 64px;
+  }
+  .brand .brand__ikea {
+    width: 160px;
+    height: 64.2px;
+  }
+  .brand .brand__reebook {
+    width: 234px;
+    height: 48px;
+  }
+  .brand .brand__nike {
+    width: 122px;
+    height: 64px;
+  }
+  .brand .brand__caterpillar {
+    width: 234px;
+    height: 36px;
+  }
+  .brand_hide {
+    visibility: collapse;
   }
 }
