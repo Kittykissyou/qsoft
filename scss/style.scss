@@ -89,21 +89,62 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  .brand__henkel {
+    height: 64px;
+    width: 116px;
+  }
+  .brand__john-deere {
+    height: 44px;
+    width: 234px;
+  }
+  .brand__mcdonalds {
+    width: 85px;
+    height: 64px;
+  }
+  .brand__ikea {
+    width: 160px;
+    height: 64.2px;
+  }
+  .brand__reebook {
+    width: 234px;
+    height: 48px;
+  }
+  .brand__nike {
+    width: 122px;
+    height: 64px;
+  }
+  .brand__caterpillar {
+    width: 234px;
+    height: 36px;
+  }
 }
 .brand_hide {
   visibility: collapse;
 }
+
 @media (max-width: 1280px) {
   ._container {
-    max-width: 768px;
+    max-width: 728px;
   }
-  .header-container {
-    justify-content: space-around;
-    .header-container__search-bar {
-      max-width: 344px;
+  .header-container__search-bar {
+    max-width: 344px;
+  }
+  .brand {
+    width: 229px;
+
+    .brand__john-deere {
+      height: 34px;
+      width: 183px;
     }
-    .header-container__profile {
-      max-width: 168px;
+    .brand_mcdonalds {
+    }
+    .brand_ikea {
+    }
+    .brand_reebook {
+    }
+    .brand_nike {
+    }
+    .brand_caterpillar {
     }
   }
 }
