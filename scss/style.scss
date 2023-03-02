@@ -1,0 +1,109 @@
+@import 'default';
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+._container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.header {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+  .header-container {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-container__logo {
+      width: 135.04px;
+      height: 30.32px;
+    }
+    .header-container__search-bar {
+      height: 40px;
+      width: 835px;
+      padding: 12px 39px;
+      border: 1px solid #ebebf1;
+      border-radius: 5px;
+      background: url(../img/header/search.png) no-repeat 14px 10px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+    }
+    .header-container__profile {
+      width: 148px;
+      height: 80px;
+      padding: 0 0 0 19px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: solid #ebebf1;
+      border-width: 0 0 0 1px;
+
+      .header-container__profile-name {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #768298;
+      }
+      .header-container__profile-photo {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
+.main {
+  margin-top: 70px;
+  .main-container {
+    .main-container__header {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 160%;
+      text-transform: uppercase;
+    }
+    .main-container__brands-container {
+      height: 270px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+.brand {
+  height: 120px;
+  width: 287.5px;
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+  box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1),
+    0px 0px 10px rgba(164, 164, 164, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.brand_hide {
+  visibility: collapse;
+}
+@media (max-width: 1280px) {
+  ._container {
+    max-width: 768px;
+  }
+  .header-container {
+    justify-content: space-around;
+    .header-container__search-bar {
+      max-width: 344px;
+    }
+    .header-container__profile {
+      max-width: 168px;
+    }
+  }
+}
