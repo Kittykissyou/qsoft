@@ -21,20 +21,7 @@
       width: 135px;
       height: 30px;
     }
-    .header-container__search-bar {
-      height: 40px;
-      width: 835px;
-      padding: 12px 39px;
-      border: 1px solid #ebebf1;
-      border-radius: 5px;
-      background: url(../img/header/search.png) no-repeat 14px 10px;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.01em;
-    }
+
     .header-container__profile {
       width: 148px;
       height: 80px;
@@ -61,9 +48,30 @@
       }
     }
   }
-  .header-container__search-bar375 {
-    display: none;
-  }
+}
+.search-bar {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+.search-bar_except375 {
+  background: url(../img/header/search.png) no-repeat 14px 10px;
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+  height: 40px;
+  width: 835px;
+  padding: 12px 39px;
+}
+.search-bar_375 {
+  display: none;
+  background: url(../img/header/search.png) no-repeat 0px 10px;
+  width: 335px;
+  height: 42px;
+  margin: 0 auto;
+  padding: 12px 29px;
 }
 .main {
   margin-top: 70px;
@@ -132,8 +140,9 @@
   ._container {
     max-width: 728px;
   }
-  .header-container__search-bar {
-    max-width: 344px;
+
+  .search-bar_except375 {
+    width: 344px;
   }
   .main {
     .main-container {
@@ -181,9 +190,6 @@
       height: 62px;
       justify-content: space-between;
 
-      .header-container__search-bar {
-        display: none;
-      }
       .header-container__profile {
         width: 24px;
         height: 24px;
@@ -204,83 +210,65 @@
         }
       }
     }
-    .header-container__search-bar375 {
-      display: block;
-      margin: 0 auto;
-      height: 40px;
-      width: 375px;
-      padding: 12px 49px;
-      border: 1px solid #ebebf1;
-      border-radius: 5px;
-      background: url(../img/header/search.png) no-repeat 14px 10px;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.01em;
-    }
+  }
+
+  .search-bar_except375 {
+    display: none;
+  }
+  .search-bar_375 {
+    display: block;
   }
   .main {
-    margin-top: 70px;
+    height: 1248px;
     .main-container {
       .main-container__header {
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 160%;
-        text-transform: uppercase;
+        font-size: 28px;
       }
       .main-container__brands-container {
-        height: 270px;
-        margin-top: 30px;
+        height: 1100px;
+
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: space-between;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
       }
     }
   }
   .brand {
-    height: 120px;
-    width: 287.5px;
-    border: 1px solid #ebebf1;
-    border-radius: 5px;
-    box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1),
-      0px 0px 10px rgba(164, 164, 164, 0.03);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    height: 140px;
+    width: 335px;
+
     .brand__henkel {
-      height: 64px;
-      width: 116px;
+      width: 145px;
+      height: 82px;
     }
     .brand__john-deere {
       height: 44px;
       width: 234px;
     }
     .brand__mcdonalds {
-      width: 85px;
-      height: 64px;
+      width: 100px;
+      height: 75px;
     }
     .brand__ikea {
-      width: 160px;
-      height: 64.2px;
+      width: 194px;
+      height: 78px;
     }
     .brand__reebook {
-      width: 234px;
+      width: 232px;
       height: 48px;
     }
     .brand__nike {
-      width: 122px;
-      height: 64px;
+      width: 141px;
+      height: 74px;
     }
     .brand__caterpillar {
-      width: 234px;
-      height: 36px;
+      width: 247px;
+      height: 38px;
     }
   }
   .brand_hide {
-    visibility: collapse;
+    display: none;
   }
 }
